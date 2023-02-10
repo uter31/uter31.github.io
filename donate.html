@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>L2Rainbow - Master Class</title>
+<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+<meta name="description" content="L2Rainbow - Master Class">
+<link rel='stylesheet' href='css/style.css@v3.css'>
+<link rel="stylesheet" href="css/pinchzoomer.min.css@v3.css">
+<script src='js/jquery-1.9.1.js'></script>
+<script src='js/jquery-1.9.1.js'></script>
+<script src="js/jquery.functions.js@v4"></script>
+<script src='js/wow.min.js'></script>
+<script src='js/hammer.min.js'></script>
+<script src='js/TweenMax.min.js'></script>
+<script src='js/jquery.pinchzoomer.min.js'></script>
+<script>
+    function openPopup(popup) {
+  /* Open popup and make accessible screen readers */
+  $(popup).show().attr("aria-hidden", "false");
+  /* Focus on element to guide screen readers to popup */
+  $("#closePopup").focus();
+}
+
+function closePopup(popup) {
+  /* Close popup and hide from screen readers */
+  $(popup).hide().attr("aria-hidden", "true");
+  /* Focus screen readers back to button */
+  $("#openMyPopup").focus();
+}
+</script>
+</head>
+<body class="overflow-hidden">
+<header>
+<div class="wrapper">
+<div>
+<a href='index.html' class='logo'><img src='img/logo.png' alt=''></a>
+<nav>
+<ul>
+<li><a class="menu" href='index.html'>Главная</a></li>
+<li><a href="https://l2rainbow.ru/index.html">Начать играть</a></li>
+<li><a href="https://discord.gg/ynCbHh5sEm">Сообщество</a></li>
+<li><a href='donate.html'>Пожертвования</a></li>
+<li><a href="ucp.html">Личный кабинет</a></li>
+<div class="show-smartphone">
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a href="https://l2rainbow.ru/index.php?f=ru"><img src="img/ru.png" alt="" width="89" height="34" /></a>
+&nbsp; &nbsp; &nbsp;<a href="https://l2rainbow.ru/en/donate.html?f=en"><img src="img/en.png" alt="" width="89" height="34" /></a>
+</div>
+</ul>
+</nav>
+</div>
+<div class='hide-smartphone'>
+<div class="blok">
+<ul class="topmenu">
+<li><a href="https://l2rainbow.ru/index.php?f=ru"><img src="img/ru.png" alt="" width="89" height="34" /></a>
+<ul class="submenu">
+<li><a href="https://l2rainbow.ru/en/donate.html?f=en"><img src="img/en.png" alt="" width="89" height="34" /></a>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="menu-mobile">
+<span></span>
+</div>
+</div>
+</header>
+<section class="section3">
+<div class="popup" id="myPopup" aria-hidden="true" onClick="if(event.target == this){closePopup('#myPopup');}">
+  <div class="wrapper" aria-labelledby="popupTitle" aria-describedby="popupText" aria-modal="true">
+    <h2 align="center" id="popupTitle">Пожертвования</h2>
+<p id="popupText">Наш проект абсолютно бесплатный, т.е. некоммерческий и создан по личной инициативе группы людей, любителей в области интернет технологий и фанатов игры Lineage. Но как любому развивающемуся проекту нам нужно оплачивать хостинги, размещать рекламу и улучшать серверное оборудование. В связи с этим мы готовы принять материальную помощь от всех желающих и болеющих за наш проект игроков.<br /><br />За помощь проекту мы решили вознаградить Вас в игре. Вы можете получить накопительные бонусы в виде&nbsp;<span class="style23">Coin of Luck (CoL)</span>.<br /><br />За CoL Вы сможете приобрести в игре различные услуги и предметы, такие как: премиум аккаунт, руны для ускорения прокачки, а также различные украшения не влияющие на баланс игры.<br /><br />
+Вышеуказанные бонусы можно получить и другими способами, учавствуя в акциях, эвентах и турнирах, которые периодически проводятся на сервере.<br /><br /><span class="style23">Отправляя платеж Вы подтверждаете, что согласны с каждым пунктом правил&nbsp;пользовательского соглашения и признаете, что данный платеж является добровольным пожертвованием в помощь проекту L2Rainbow.ru и возврату не подлежит.</span></p><br>    <a id="closePopup" onClick="closePopup('#myPopup');" aria-label="Close popup">Закрыть</a>
+  </div>
+</div>    
+<div class="cloud-top"></div>
+<div class="cloud-bottom"></div>
+<img class="char wow fadeInRight" src="img/img_knight.png" alt="" data-wow-delay="0.4s">
+<div class="section-header">
+<br><br><br><br><br><br><br><br><br>
+<h2 class="wow fadeInUp" data-wow-delay="0s">Пожертвования</h2>
+<p class="wow fadeInUp" data-wow-delay="0.2s">1 Монета Удачи = 30 RUB = 0.5 USD. <br>Пожертвования, которые вы делаете, используются для обновления и технического обслуживания оборудования.
+Пожертвование является полностью добровольным и не требуется для игры.
+Пожертвования возврату не подлежат.<br>
+<a id="openMyPopup" data-popup="myPopup" onClick="openPopup('#myPopup')" aria-controls="myPopup" aria-label="Open popup">Подробнее о пожертвованиях</a></p>
+</div>
+<div class='wrapper'>
+<div class="donate wow fadeIn" data-wow-delay="0.8s">
+<div>
+<!--<div class="tabs-content">-->
+<!--    <h2 align="center" class="wow fadeInUp" data-wow-delay="0s">Метод 1. QIWI AND CARDS(RU)</h2>-->
+<!--<div class="active">-->
+<!--<div class="donation_result_mess"></div>-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!--<script>-->
+<!--				document.addEventListener( "DOMContentLoaded", function( event )-->
+<!--				{-->
+<!--					$( "#qiwi-payment" ).submit( function( event )-->
+<!--					{-->
+<!--						var result = true;-->
+<!--						var char_name = $( "#qiwi-payment input[name^='account']" ).val();-->
+<!--						var count = $( "#qiwi-payment #count" ).val();-->
+<!--						var server_id = $( "#qiwi-payment select[name^='customFields[server_id]']" ).val();-->
+						
+<!--						console.log( "server id: " + server_id );-->
+						
+<!--						$.ajax(-->
+<!--						{-->
+<!--							type: "POST",-->
+<!--							url: "/qiwi/sign.php",-->
+<!--							data: ( { "server_id": server_id, "char_name": char_name, "count": count } ),-->
+<!--							async: false,-->
+<!--							dataType: "json",-->
+<!--							success: function( response )-->
+<!--							{-->
+<!--								if ( response["error"] !== undefined )-->
+<!--								{-->
+<!--									$( "#qiwi-payment .message" ).html( response["error"]["message"] );-->
+<!--									result = false;-->
+<!--								}-->
+<!--								else-->
+<!--								{-->
+<!--									$( "#qiwi-payment .message" ).html( '' );-->
+									
+<!--									$( "#qiwi-payment input[name^='publicKey']" ).val( response["publicKey"] );-->
+<!--									$( "#qiwi-payment input[name^='billId']" ).val( response["billId"] );-->
+<!--									$( "#qiwi-payment input[name^='amount']" ).val( response["amount"] );-->
+<!--									$( "#qiwi-payment input[name^='successUrl']" ).val( response["successUrl"] );-->
+<!--								}-->
+<!--							}-->
+<!--						});-->
+						
+<!--						return result;-->
+<!--					});-->
+<!--				});-->
+<!--</script>-->
+<!--<form id="qiwi-payment" action="https://oplata.qiwi.com/create" method="GET" accept-charset="UTF-8">-->
+<!--<div class="message" style="color:red;"></div>-->
+<!--	<input type="hidden" name="publicKey" value="" />-->
+<!--	<input type="hidden" name="billId" value="" />-->
+<!--	<input type="hidden" name="amount" value="" />-->
+<!--	<input type="hidden" name="successUrl" value="" />-->
+<!--	<input type="hidden" name="comment" value="Добровольное пожертвование">-->
+<!--    <div class="form-donate">						-->
+<!--<div class="text-input big">-->
+<!--<input class="account_field" name="account" required="" type="text" value="" placeholder="" />-->
+<!--<label for="">Имя персонажа</label>-->
+<!--</div>-->
+<!--<div class="text-input big">-->
+<!--<input id="count" class="amount_field"  required="" type="number" value="1" min="1" max="5000" />-->
+<!--<label for="">Количество монет</label>-->
+<!--</div>-->
+<!--</div><br>	-->
+<!--<button type="submit" class='button-alt small uppercase'>Пожертвовать</button>-->
+<!--</form>-->
+<!--</div>-->
+<!--</div>-->
+<div class="tabs-content">
+    <h2 align="center" class="wow fadeInUp" data-wow-delay="0s">Метод 1. FREEKASSA</h2>
+    <p align="center">Временно не работает</p>
+    <div class="active">
+        <div class="donation_result_mess"></div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript">
+    $(function () {
+        function calculateBonuses() {
+            var coinPrice = parseFloat($('#fkForm #coinPrice').val());
+            var coins = parseInt($('#fkForm #coins').val());
+            if (isNaN(coins) || isNaN(coinPrice) || coins <= 0) {
+                $('#fkForm #sum').val('');
+                return;
+            }
+            var price = coins * coinPrice;
+            if (price > 15000) {
+                price = 15000;
+            }
+            $('#fkForm #sum').val(price);
+        }
+        $('#fkForm input#coins').keyup(function () {
+            calculateBonuses();
+        });
+        calculateBonuses();
+        $('#fkForm').submit(function(){
+            var sum = parseFloat($('#fkForm #sum').val());
+            if (isNaN(sum) || sum <= 0 || sum > 15000) {
+                alert('Неверная сумма платежа');
+                return false;
+            }
+        });
+    });
+</script>
+        <form id="fkForm" action="https://l2rainbow.ru/freekassa/fk_go.php" method="post">
+            <div class="form-donate">
+            <div class="text-input big">
+                    <input class="account_field" type="text" value="" name="us_account" required="required" id="us_account" />
+                    <label for="us_account">Имя персонажа</label>
+                </div>
+            <div class="text-input big">
+                    <input id="coins" class="amount_field" name="coins" required="" type="number" value="1" min="1" max="5000" />
+                    <label for="coins">Количество монет</label>
+            </div>
+            </div><br>
+            <input type="hidden" id="sum" name="sum" value="">
+            <input type="hidden" id="coinPrice" name="coinPrice" value="30">
+            <input type="hidden" name="desc" value="Добровольное пожертвование">
+            <input type="submit1" class='button-alt small uppercase' value="Пожертвовать">
+        </form>
+    </div>
+</div>
+<div class="tabs-content">
+    <h2 align="center" class="wow fadeInUp" data-wow-delay="0s">Метод 2. PRIMEPAYMENTS</h2>
+    <center><input type="button" onclick="location.href='primepayments/form.php';" class='button-alt small uppercase' value="Пожертвовать"></center>
+</div>
+<div class="tabs-content">
+    <h2 align="center" class="wow fadeInUp" data-wow-delay="0s">Метод 3. PAYPALYCH</h2>
+    <center><input type="button" onclick="location.href='paypalych/form.php';" class='button-alt small uppercase' value="Пожертвовать"></center>
+</div>
+<!--place for script -->
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="wrapper">
+<div>
+<img class="logo" src="https://l2rainbow.ru/img/logo_footer.png" alt="">
+<div class="copy">© 2022-2023 L2Rainbow - All rights reserved</div>
+</div>
+<div class="rights">
+    <a href="https://l2rainbow.ru/eula.html" target="_blank" data-i18n="footer.terms_of_use">Пользовательское Соглашение</a> | <a href="https://l2rainbow.ru/policy.html" target="_blank" data-i18n="footer.terms_of_use">Политика конфиденциальности</a><br><br>
+Email: support@l2rainbow.ru | Discord: dizzki#6336<br><br>
+Общедоступный тестовый сервер Lineage 2. Этот сервер является эмулятором игры Lineage 2. 
+Использование сервиса осуществляется исключительно в информационных целях.
+<br>
+Вы можете ознакомиться с оригинальной версией игры Lineage 2 на официальных серверах NCsoft.
+</div>
+</div>
+</footer>
+<div class="loader">
+<img src="https://l2rainbow.ru/img/logo_footer.png" alt="">
+</div>
+</body>
+</html>
